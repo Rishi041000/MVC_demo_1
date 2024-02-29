@@ -31,7 +31,7 @@ jobs:
     - name: download artifacts
       uses: actions/download-artifact@v4
       with:
-        name: my-artifacts
+        name: MVC_demo_1
     - name: Display structure of downloaded files
       run: ls -R
     
