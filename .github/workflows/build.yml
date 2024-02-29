@@ -31,5 +31,5 @@ jobs:
     - name: download artifacts
       uses: actions/download-artifact@v4
     - name: Display structure of downloaded files
-      run: ls -R
+      run: ls -R C:\Users\BBOMMAN\Desktop\artifacts
     
