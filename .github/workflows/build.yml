@@ -34,4 +34,4 @@ jobs:
 
     #publish files
     - name: Publish
-      run: dotnet publish MVC_demo_1/MVC_demo_1.csproj -c Release
+      run: dotnet publish MVC_demo_1/MVC_demo_1.csproj -c Release -o release — nologo
