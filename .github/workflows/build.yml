@@ -34,4 +34,4 @@ jobs:
 
     #publish files
     - name: Publish
-      run: dotnet publish -c Release --self-contained -p:PublishReadyToRun=true
+      run: dotnet publish -c Release -o C:\Users\BBOMMAN\Desktop\Personal\DOT NET\CICD\MVC_demo_1\bin\Release\net6.0\publish
