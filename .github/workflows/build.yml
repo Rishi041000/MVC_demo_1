@@ -14,10 +14,24 @@ jobs:
     
     steps:
     - uses: actions/checkout@v3
+    
     - name: Setup dotnet ${{ matrix.dotnet-version }}
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: ${{ matrix.dotnet-version }}
+        
     # You can test your matrix by printing the current dotnet version
     - name: Display dotnet version
       run: dotnet --version
+
+    #installing the dependendencies
+    - name: Install dependencies
+      run: dotnet restore
+
+    #Building the project
+    - name: Build Code
+      run: dotnet build
+
+    #Testing the code with dot net cli
+    - name: Test
+      run: dotnet test
