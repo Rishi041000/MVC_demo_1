@@ -34,4 +34,4 @@ jobs:
 
     #publish files
     - name: Publish
-      run: dotnet publish -c Release o ../dotnet-webapp
+      run: dotnet publish -c Release
