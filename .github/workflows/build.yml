@@ -34,4 +34,4 @@ jobs:
 
     #publish files
     - name: Publish
-      run: dotnet publish ~/MVC_demo_1.csproj
+      run: dotnet publish -c release
