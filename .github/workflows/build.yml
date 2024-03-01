@@ -34,4 +34,4 @@ jobs:
 
     #publish files
     - name: Publish
-      run: dotnet publish -c release
+      run: dotnet publish -c Release
