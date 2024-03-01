@@ -35,3 +35,10 @@ jobs:
     #Testing the code with dot net cli
     - name: Test
       run: dotnet test
+
+    # uploading Artifacts
+    - name: Upload Artifacts
+      uses: actions/upload-artifacts@v3
+      with:
+        name: build-files
+        path: .next/
